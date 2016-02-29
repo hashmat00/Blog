@@ -58,16 +58,16 @@ app.post("/blogs", function(req, res){
   
 
 
-//SHOW ROUTE
-app.get("/blogs/:id", function(req, res){
-   Blog.findById(req.params.id, function(err, blog){
-      if(err){
-          res.redirect("/");
-      } else {
-          res.render("show", {blog: blog});
-      }
-   });
-});
+// //SHOW ROUTE
+// app.get("/blogs/:id", function(req, res){
+//   Blog.findById(req.params.id, function(err, blog){
+//       if(err){
+//           res.redirect("/");
+//       } else {
+//           res.render("show", {blog: blog});
+//       }
+//   });
+// });
 
 
 
