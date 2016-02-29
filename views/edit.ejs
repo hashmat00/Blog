@@ -1,3 +1,4 @@
+
 <% include ./partials/header %>
 
 <div class="ui main tet container segment">
@@ -7,15 +8,15 @@
             
             <div class="field">
                 <label>Title</label>
-                <input type="text" name="blog[title]" placeholder="Title" value="<%=blog.title%>">
+                <input type="text" name="blog[title]" placeholder="Title" value="<%= blog.title %>">
             </div>
             <div class="field">
                 <label>Image</label>
-            <input type="text" name="blog[image]" placeholder="image" value="<%=blog.image%>">
+            <input type="text" name="blog[image]" placeholder="image" value="<%= blog.image %>">
             </div>
             <div class="field">
                 <label>Description</label>
-            <textarea name="blog[body]"><%=blog.body%></textarea>
+            <textarea name="blog[body]"><%= blog.body %></textarea>
             </div>
             
             <input class="ui violet big basic button" type="submit">
@@ -35,3 +36,65 @@
 
 
 <% include ./partials/footer %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<% include ./partials/header %>-->
+
+<!--<div class="ui main tet container segment">-->
+<!--    <div class="ui huge header">Edit <%= blog.title %></div>-->
+    
+<!--        <form class="ui form" action="/blogs/<%=blog._id%>?_method=PUT" method="POST">-->
+            
+<!--            <div class="field">-->
+<!--                <label>Title</label>-->
+<!--                <input type="text" name="blog[title]" placeholder="Title" value="<%=blog.title%>">-->
+<!--            </div>-->
+<!--            <div class="field">-->
+<!--                <label>Image</label>-->
+<!--            <input type="text" name="blog[image]" placeholder="image" value="<%=blog.image%>">-->
+<!--            </div>-->
+<!--            <div class="field">-->
+<!--                <label>Description</label>-->
+<!--            <textarea name="blog[body]"><%=blog.body%></textarea>-->
+<!--            </div>-->
+            
+<!--            <input class="ui violet big basic button" type="submit">-->
+           
+<!--        </form>    -->
+    
+    
+<!--</div>-->
+
+
+
+
+
+
+
+
+
+
+<!--<% include ./partials/footer %>-->
